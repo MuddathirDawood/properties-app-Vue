@@ -18,6 +18,11 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: Admin
+  },
+  {
+    path: '/properties/:id',
+    name: 'single',
+    component: ()=> import('../views/Single.vue')
   }
 ]
 
