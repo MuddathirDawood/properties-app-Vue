@@ -2,7 +2,6 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/properties">Properties</router-link> |
-    <router-link to="/properties/:id">Single</router-link> |
     <router-link to="/admin">Admin</router-link>
   </nav>
 </template>
