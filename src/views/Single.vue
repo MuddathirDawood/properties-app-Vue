@@ -85,8 +85,10 @@ img{
 h2{
   width: 35%;
   margin: auto;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 2px solid black;
+  padding-top: 10px;
+  border-top: 2px solid black;
 }
 
 </style>
