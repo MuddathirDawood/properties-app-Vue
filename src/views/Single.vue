@@ -1,6 +1,6 @@
 <template>
     <Navbar />
-    <div v-if="property">
+    <div v-if="property" id="content">
       <div class="container">
       <div class="img">
       <img :src="property.image" alt="">
@@ -48,6 +48,7 @@ export default {
   display: flex;
   flex-flow: row;
   padding: 10px;
+  margin-bottom: 25px;
 }
 .info{
   font-size: 16px;
@@ -72,6 +73,7 @@ h4{
   padding: 35px 35px 35px 35px;
   margin: 0 0 0 0;
   border: 1px solid black;
+  align-items: center;
 }
 
 img{

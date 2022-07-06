@@ -1,7 +1,7 @@
 <template>
         <div class="card" v-for="property of properties" :key="property.id">
         <router-link :to="{name: 'single', params: {id: property.id}}">
-            <img :src="property.image" class="card-img-top" alt="...">
+            <img :src="property.image" class="card-img-top" :alt="property.address.street">
             <div class="card-body">
                 <h5>{{property.address.region}}/ {{property.address.neighbourhood}}/ {{property.address.street}}</h5>
                 <h6>${{property.price}}</h6>
@@ -36,7 +36,6 @@ export default {
 }
 
 .card{
-    margin-top: 50px;
     height: 475px;
     width: 20em;
     box-shadow: 15px 15px 15px rgb(33, 62, 151);
